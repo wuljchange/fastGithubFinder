@@ -1,0 +1,51 @@
+{
+  "name": "fastgithubfinder",
+  "version": "1.0.0",
+  "description": "fast github finder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuljchange/fastGithubFinder.git"
+  },
+  "author": "wuljchange",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuljchange/fastGithubFinder/issues"
+  },
+  "homepage": "https://github.com/wuljchange/fastGithubFinder#readme",
+  "dependencies": {
+    "immutable": "^4.0.0-rc.12",
+    "material-ui": "^0.20.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-tap-event-plugin": "^3.0.3",
+    "redux": "^4.0.4",
+    "redux-actions": "^2.6.5",
+    "redux-immutable": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "html-webpack-plugin": "^3.2.0",
+    "redux-logger": "^3.0.6",
+    "webpack": "^4.41.2",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
