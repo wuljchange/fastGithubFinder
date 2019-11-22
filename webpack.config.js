@@ -23,7 +23,7 @@ module.exports = {
                 loader: 'eslint-loader',
                 include: `${__dirname}/src`,
                 exclude: /bundle\.js$/
-            }
+            },
         ],
         loaders: [{
             test: /\.js$/,
@@ -37,7 +37,7 @@ module.exports = {
     // 启动开发测试用 server 设定（不能用在 production）
     devServer: {
         inline: true,
-        port: 8008,
+        port: 8080,
     },
     plugins: [HTMLWebpackPluginConfig],
 };
