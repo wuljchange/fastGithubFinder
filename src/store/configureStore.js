@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware } from "redux";
+import { createStore, applyMiddleware } from 'redux';
 import reduxThunk from 'redux-thunk';
 import createLogger from 'redux-logger';
 import Immutable from 'immutable';
@@ -9,5 +9,5 @@ const initialState = Immutable.Map();
 export default createStore(
     rootReducers,
     initialState,
-    applyMiddleware(reduxThunk, createLogger({ stateTransformer: state => state.toJS() }))
+    applyMiddleware(reduxThunk, createLogger({ stateTransformer: (state) => state.toJS() })),
 );

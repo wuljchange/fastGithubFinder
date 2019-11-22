@@ -1,10 +1,10 @@
-import { connect } from "react-redux";
-import HomePage from '../../components/HomePage';
+import { connect } from 'react-redux';
+import HomePage from '../../components/HomePage/HomePage';
 
 import {
     getGithub,
     changeUserId,
-} from "../../actions";
+} from '../../actions/githubActions';
 
 export default connect(
     (state) => ({
@@ -21,8 +21,8 @@ export default connect(
     (stateProps, dispatchProps, ownProps) => {
         const { userId } = stateProps;
         const { onSubmitUserId } = dispatchProps;
-        return Object.assign({}, stateProps, dispatchProps, ownProps, {
-            onSubmitUserId: onSubmitUserId(userId),
-        });
+        return {
+            ...stateProps, ...dispatchProps, ...ownProps, onSubmitUserId: onSubmitUserId(userId),
+        };
     },
 )(HomePage);

@@ -1,20 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { browerHistory, Router, Route, IndexRoute } from 'react-router';
+import {
+    browserHistory,
+    Router,
+    Route,
+    IndexRoute,
+} from 'react-router';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Main from './components/Main';
-import HomePageContainer from './containers/HomePageContainer';
-import ResultPageContainer from './containers/ResultPageContainer';
-import store from './store';
+import Main from './components/Main/Main';
+import HomePageContainer from './containers/HomePage/HomePageContainer';
+import ResultPageContainer from './containers/ResultPage/ResultPageContainer';
+import store from './store/configureStore';
 
 injectTapEventPlugin();
 
 ReactDOM.render(
     <Provider store={store}>
         <MuiThemeProvider>
-            <Router history={browerHistory}>
+            <Router history={browserHistory}>
                 <Route path="/" component={Main}>
                     <IndexRoute component={HomePageContainer} />
                     <Route path="/result" component={ResultPageContainer} />
@@ -22,6 +27,5 @@ ReactDOM.render(
             </Router>
         </MuiThemeProvider>
     </Provider>,
-    document.getElementsById("app")
+    document.getElementsById('app'),
 );
-

@@ -1,12 +1,12 @@
 import { handleActions } from 'redux-actions';
-import { GithubState } from "../../constants/models";
+import { GithubState } from '../../constants/models';
 
 import {
     GET_GITHUB_INITIATE,
     GET_GITHUB_SUCCESS,
     GET_GITHUB_FAIL,
     CHAGE_USER_ID,
-} from "../../constants/actionTypes";
+} from '../../constants/actionTypes';
 
 const githubReducers = handleActions({
     GET_GITHUB_SUCCESS: (state, { payload }) => (
